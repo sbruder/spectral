@@ -2,8 +2,8 @@
 <section id="cta" class="wrapper style4">
 	<div class="inner">
 		<header>
-      <h2>{{ .title | safeHTML }}</h2>
-      <p>{{ .body | safeHTML }}</p>
+      <h2>{{ .Site.Params.cta.title | safeHTML }}</h2>
+      <p>{{ .Site.Params.cta.body | safeHTML }}</p>
 		</header>
 		<ul class="actions vertical">
       {{ range .Site.Params.cta.link }}

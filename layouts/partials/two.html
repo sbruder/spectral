@@ -2,7 +2,7 @@
 <section id="two" class="wrapper alt style2">
   {{ range .Site.Params.two.section }}
 	<section class="spotlight">
-    <div class="image"><img src="{{ .img }}" alt="" /></div><div class="content">
+    <div class="image"><img src="{{ .img | relURL }}" alt="" /></div><div class="content">
       <h2>{{ .title | safeHTML }}</h2>
       <p>{{ .body | safeHTML }}</p>
 		</div>

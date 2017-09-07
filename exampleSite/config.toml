@@ -11,6 +11,14 @@ description = 'Another fine responsive<br />site template freebie<br />crafted b
 startbuttonText = "Activate"
 startbuttonLink = "#"
 
+[[params.menu.main]]
+url = '/'
+title = "Home"
+
+[[params.menu.main]]
+url = '/posts/'
+title = "Posts"
+
 [params.one]
 enable = true
 title = 'Arcu aliquet vel lobortis ata nisl<br />eget augue amet aliquet nisl cep donec'
@@ -98,6 +106,18 @@ special = true
 href = "#"
 text = "Learn More"
 special = false
+
+[params.contact]
+enable = true
+title = "Contact"
+body = "Leave us a message."
+phone = "+49 (0) 030 000 000"
+address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
+email = "nospam@example.com"
+subject = "New Submission!"
+plain = false
+
+# language specific options
 
 [languages.en]
 weight = 0

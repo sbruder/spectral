@@ -1,22 +1,15 @@
 {{ partial "header.html" . }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-			<div>
-				<ul id="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-					{{ end }}
-				</ul>
-			</div>
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-		</article>
-	</main>
-{{ partial "sidebar.html" . }}
+<article id="main">
+  <header {{ with .Params.image }}style="background-image: url('{{ . }}')"{{ end }}>
+    <h2>{{ .Title }}</h2>
+    {{ with .Params.subtitle }}
+    <p>{{ . }}</p>
+    {{ end }}
+	</header>
+	<section class="wrapper style5">
+		<div class="inner">
+      {{ .Content }}
+		</div>
+	</section>
+</article>
 {{ partial "footer.html" . }}

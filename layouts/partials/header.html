@@ -33,7 +33,7 @@
 									<div id="menu">
 										<ul>
 				              {{ range .Site.Menus.main }}
-				              <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				              <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
 				              {{ end }}
 										</ul>
 									</div>

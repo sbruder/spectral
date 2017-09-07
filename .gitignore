@@ -1,4 +1,5 @@
 exampleSite/themes
+exampleSite/content
 html5up-spectral
- static/sass/.sass-cache
-
+.sass-cache
+static/css/main.css.map

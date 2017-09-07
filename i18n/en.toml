@@ -3,3 +3,30 @@ other = "Menu"
 
 [learnmore]
 other = "Learn More"
+
+[name]
+other = "Name"
+
+[email]
+other = "Email"
+
+[phone]
+other = "Phone"
+
+[address]
+other = "Address"
+
+[yourmessage]
+other = "Your Message"
+
+[send]
+other = "send"
+
+[reset]
+other = "reset"
+
+[allarticles]
+other = "all articles"
+
+[readmore]
+other = "Read more…"
