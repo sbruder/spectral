@@ -1,0 +1,15 @@
+{{ if .Site.Params.one.enable }}
+	<section id="one" class="wrapper style1 special">
+		<div class="inner">
+			<header class="major">
+        <h2>{{ .Site.Params.one.title | safeHTML}}</h2>
+        <p>{{ .Site.Params.one.body | safeHTML }}</p>
+			</header>
+			<ul class="icons major">
+        {{ range .Site.Params.one.icon }}
+        <li><span class="icon {{ .icon }} major style{{ .style }}"><span class="label">{{ .label }}</span></span></li>
+        {{ end }}
+			</ul>
+		</div>
+	</section>
+{{ end }}

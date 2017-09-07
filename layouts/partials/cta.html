@@ -1,0 +1,15 @@
+{{ if .Site.Params.cta.enable }}
+<section id="cta" class="wrapper style4">
+	<div class="inner">
+		<header>
+      <h2>{{ .title | safeHTML }}</h2>
+      <p>{{ .body | safeHTML }}</p>
+		</header>
+		<ul class="actions vertical">
+      {{ range .Site.Params.cta.link }}
+      <li><a href="{{ .href }}" class="button fit {{ if .special }}special{{ end }}">{{ .text }}</a></li>
+      {{ end }}
+		</ul>
+	</div>
+</section>
+{{ end }}
