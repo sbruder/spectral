@@ -1,6 +1,6 @@
 <section id="banner">
 	<div class="inner">
-    <h2>{{ .FancyTitle | safeHTML }}</h2>
+    <h2>{{ .Site.Params.FancyTitle | safeHTML }}</h2>
     <p>{{ .Site.Params.description | safeHTML }}</p>
     {{ if and .Site.Params.startbuttonText .Site.Params.startbuttonLink }}
 		<ul class="actions">
