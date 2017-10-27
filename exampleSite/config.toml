@@ -117,6 +117,12 @@ email = "nospam@example.com"
 subject = "New Submission!"
 plain = false
 
+[params.social]
+twitter = ""
+facebook = ""
+instagram = ""
+dribble = ""
+
 # language specific options
 
 [languages.en]

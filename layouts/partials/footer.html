@@ -1,11 +1,21 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+              {{ with .Site.Params.social.twitter }}
+              <li><a href="https://twitter.com/{{ . }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.facebook }}
+              <li><a href="https://facebook.com/{{ . }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.instagram }}
+              <li><a href="https://instagram.com/{{ . }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.dribble }}
+              <li><a href="https://dribble.com/{{ . }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.contact.email }}
+              <li><a href="mailto:{{ . }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+              {{ end }}
 						</ul>
 						<ul class="copyright">
               <li>&copy; {{ now.Year }} {{.Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
