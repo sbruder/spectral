@@ -6,7 +6,7 @@
       <p>{{ .Site.Params.contact.body | safeHTML }}</p>
     </header>
     <div class="row">
-      <div class="6u 12u$(small)">
+      <div class="6u 12u$(medium)">
         <form method="post" action="https://formspree.io/{{ .Site.Params.contact.email }}">
           <div class="row uniform">
             <input type="hidden" name="_subject" value="{{ .Site.Params.contact.subject }}" />
@@ -30,23 +30,6 @@
             </div>
           </div>
         </form>
-      </div>
-      <div class="6u$ 12u$(small)">
-        <div class="contact-method">
-          <span class="icon fa-envelope"></span>
-          <h3>{{ i18n "email" }}</h3>
-          <a href="mailto:{{ .Site.Params.contact.email }}">{{ .Site.Params.contact.email }}</a>
-        </div>
-        <div class="contact-method">
-          <span class="icon fa-phone"></span>
-          <h3>{{ i18n "phone" }}</h3>
-          {{ .Site.Params.contact.phone }}
-        </div>
-        <div class="contact-method">
-          <span class="icon fa-home"></span>
-          <h3>{{ i18n "address" }}</h3>
-          {{ .Site.Params.contact.address | safeHTML }}
-        </div>
       </div>
     </div>
   </div>

@@ -9,11 +9,11 @@
 	  <title>{{ .Title }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-  	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
-  	{{ .Hugo.Generator }}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
+    {{ .Hugo.Generator }}
     {{ `<!--[if lte IE 8]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->` | safeHTML }}
 
     {{ partial "stylesheets.html" . }}
@@ -32,8 +32,8 @@
                   <a href="#menu" class="menuToggle"><span>{{ i18n "menu" }}</span></a>
 									<div id="menu">
 										<ul>
-				              {{ range .Site.Menus.main }}
-				              <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
+				              {{ range .Site.Params.menu.main }}
+				              <li><a href="{{ .url | relURL }}">{{ .title }}</a></li>
 				              {{ end }}
 										</ul>
 									</div>
