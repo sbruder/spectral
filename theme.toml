@@ -1,7 +1,7 @@
 name = "Spectral"
 license = "CC-BY 3.0"
 licenselink = "https://html5up.net/license"
-description = "Port of the HTML5UP Spectral Theme (öps://html5up.net/spectral)"
+description = "Port of the HTML5UP Spectral Theme (https://html5up.net/spectral)"
 homepage = "//"
 tags = ["company", "portfolio", "blog"]
 features = ["blog", "responsive", "multilingual"]

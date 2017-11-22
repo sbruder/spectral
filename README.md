@@ -1,31 +1,27 @@
-# Blank
+# Spectral
 
-Blank — starter [Hugo](//gohugo.io/) theme for developers. Use it to make your own theme.
+Based on html5up’s [Spectral](https://html5up.net/spectral) theme.
 
-[Live Demo](http://themes.gohugo.io/theme/blank/)
+Specially made for my customer
+[kegelschiene.net](https://kegelschiene.net/en/), so some functions are
+missing. If you need one, that is not implemented yet, please open an issue!
 
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
+# Installation
 
-## Installation
+If this is your first hugo page, please read the [Basic Usage of
+Hugo](https://gohugo.io/getting-started/usage/) article.
 
-In your Hugo site `themes` directory, run:
+Clone this repo or download the zip, place it inside of the `themes` directory
+of your hugo site and use the `config.toml` file located in exampleSite as a
+starting point.
 
-```
-$ git clone https://github.com/vimux/blank
-```
+If you want to have a look at a real life installation, feel free to explore
+the [repo of
+kegelschiene.net](https://gitlab.jalr.de/sbruder/kegelschiene-hugo). It also
+includes the configuration for a multilingual site.
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `blank`.
+# License
 
-```
-theme = "blank"
-```
-
-For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
-
-## Contributing
-
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/Vimux/blank/issues) to let me know. Or make directly a [pull request](//github.com/Vimux/blank/pulls).
-
-## License
-
-This theme is released under the [MIT license](//github.com/Vimux/blank/blob/master/LICENSE.md).
+This theme is licensed under the terms of the Creative Commons Attribution 3.0
+Unported (like html5up’s original theme). See the LICENSE.md file for more
+information on this.
