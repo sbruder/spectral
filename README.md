@@ -17,8 +17,8 @@ starting point.
 
 If you want to have a look at a real life installation, feel free to explore
 the [repo of
-kegelschiene.net](https://gitlab.jalr.de/sbruder/kegelschiene-hugo). It also
-includes the configuration for a multilingual site.
+kegelschiene.net](https://git.sbruder.de/kegelschiene/site). It also includes
+the configuration for a multilingual site.
 
 # License
 
