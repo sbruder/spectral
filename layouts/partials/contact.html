@@ -5,33 +5,29 @@
       <h2>{{ .Site.Params.contact.title }}</h2>
       <p>{{ .Site.Params.contact.body | safeHTML }}</p>
     </header>
-    <div class="row">
-      <div class="6u 12u$(medium)">
-        <form method="post" action="https://formspree.io/{{ .Site.Params.contact.email }}">
-          <div class="row uniform">
-            <input type="hidden" name="_subject" value="{{ .Site.Params.contact.subject }}" />
-            {{ if .Site.Params.contact.plain }}
-            <input type="hidden" name="_format" value="plain" />
-            {{ end }}
-            <div class="6u 12u$(small)">
-              <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" />
-            </div>
-            <div class="6u$ 12u$(small)">
-              <input type="email" name="_replyto" id="_replyto" value="" placeholder="{{ i18n "email" }}" />
-            </div>
-            <div class="12u$">
-              <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6"></textarea>
-            </div>
-            <div class="12u$">
-              <ul class="actions">
-                <li><input type="submit" value="{{ i18n "send" }}" class="special" /></li>
-                <li><input type="reset" value="{{ i18n "reset" }}" /></li>
-              </ul>
-            </div>
-          </div>
-        </form>
+    <form method="post" action="https://formspree.io/{{ .Site.Params.contact.email }}">
+      <div class="row gtr-uniform">
+        <input type="hidden" name="_subject" value="{{ .Site.Params.contact.subject }}" />
+        {{ if .Site.Params.contact.plain }}
+        <input type="hidden" name="_format" value="plain" />
+        {{ end }}
+        <div class="col-6 col-12-xsmall">
+          <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" />
+        </div>
+        <div class="col-6 col-12-xsmall">
+          <input type="email" name="_replyto" id="_replyto" value="" placeholder="{{ i18n "email" }}" />
+        </div>
+        <div class="col-12">
+          <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6"></textarea>
+        </div>
+        <div class="col-12">
+          <ul class="actions">
+            <li><input type="submit" value="{{ i18n "send" }}" class="primary" /></li>
+            <li><input type="reset" value="{{ i18n "reset" }}" /></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 </section>
 {{ end }}

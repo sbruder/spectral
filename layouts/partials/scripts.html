@@ -1,4 +1,11 @@
-<script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11.3,npm/jquery.scrollex@0.2.1,npm/jquery.scrolly@0.0.1/jquery.scrolly.min.js,gh/ajlkn/skel@3/dist/skel.min.js"></script>
-<script src="{{ "js/util.js" | relURL }}"></script>
-{{ `<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->` | safeHTML }}
-<script src="{{ "js/main.js" | relURL }}"></script>
+{{ $jquery := resources.Get "js/jquery.min.js" }}
+{{ $jquery_scrollex := resources.Get "js/jquery.scrollex.min.js" }}
+{{ $jquery_scrolly := resources.Get "js/jquery.scrolly.min.js" }}
+{{ $browser := resources.Get "js/browser.min.js" }}
+{{ $breakpoints := resources.Get "js/breakpoints.min.js" }}
+{{ $util := resources.Get "js/util.js" }}
+{{ $main := resources.Get "js/main.js" }}
+
+{{ $js := slice $jquery $jquery_scrollex $jquery_scrolly $browser $breakpoints $util $main | resources.Concat "js/bundle.js" | minify | fingerprint "sha512" }}
+
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

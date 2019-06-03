@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic">
-{{ `<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->` | safeHTML }}
-{{ `<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->` | safeHTML }}
+{{ $css := resources.Get "css/main.css" | minify | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $noscript_css := resources.Get "css/noscript.css" | minify | fingerprint "sha512" }}
+<noscript><link rel="stylesheet" href="{{ $noscript_css.RelPermalink }}" integrity="{{ $noscript_css.Data.Integrity }}"></noscript>

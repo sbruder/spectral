@@ -9,19 +9,20 @@
 	  <title>{{ .Title }}</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     {{ with .Site.Params.description }}<meta name="description" content="{{ . | plainify }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
-    {{ .Hugo.Generator }}
-    {{ `<!--[if lte IE 8]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->` | safeHTML }}
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    {{ hugo.Generator }}
 
     {{ partial "stylesheets.html" . }}
     {{ range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
 	</head>
-	<body class="landing">
+	<body class="landing is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">

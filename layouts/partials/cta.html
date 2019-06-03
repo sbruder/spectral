@@ -5,9 +5,9 @@
       <h2>{{ .Site.Params.cta.title | safeHTML }}</h2>
       <p>{{ .Site.Params.cta.body | safeHTML }}</p>
 		</header>
-		<ul class="actions vertical">
+		<ul class="actions stacked">
       {{ range .Site.Params.cta.link }}
-      <li><a href="{{ .href }}" class="button fit {{ if .special }}special{{ end }}">{{ .text }}</a></li>
+      <li><a href="{{ .href }}" class="button fit {{ if .special }}primary{{ end }}">{{ .text }}</a></li>
       {{ end }}
 		</ul>
 	</div>
