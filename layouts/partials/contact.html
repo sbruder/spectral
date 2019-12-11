@@ -12,13 +12,13 @@
         <input type="hidden" name="_format" value="plain" />
         {{ end }}
         <div class="col-6 col-12-xsmall">
-          <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" />
+          <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" required />
         </div>
         <div class="col-6 col-12-xsmall">
-          <input type="email" name="_replyto" id="_replyto" value="" placeholder="{{ i18n "email" }}" />
+          <input type="email" name="_replyto" id="_replyto" value="" placeholder="{{ i18n "email" }}" required />
         </div>
         <div class="col-12">
-          <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6"></textarea>
+          <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6" required></textarea>
         </div>
         <div class="col-12">
           <ul class="actions">
