@@ -16,6 +16,10 @@
               {{ with .Site.Params.contact.email }}
               <li><a href="mailto:{{ . }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
               {{ end }}
+              {{ with .Site.Params.contact.phone }}
+              <li><a href="tel:{{ . }}" class="icon fa-phone"><span class="label">Phone</span></a></li>
+              {{ end }}
+
 						</ul>
 						<ul class="copyright">
               <li>&copy; {{ now.Year }} {{.Site.Params.copyright | safeHTML }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
