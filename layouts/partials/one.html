@@ -1,9 +1,14 @@
 {{ if .Site.Params.one.enable }}
+{{ $md := .Params.body_is_markdown | default "false" }}
 	<section id="one" class="wrapper style1 special">
 		<div class="inner">
 			<header class="major">
         <h2>{{ .Site.Params.one.title | safeHTML}}</h2>
+        {{ if $md }}
+        {{ .Site.Params.one.body | markdownify }}
+        {{ else }}
         <p>{{ .Site.Params.one.body | safeHTML }}</p>
+        {{ end }}
 			</header>
 			<ul class="icons major">
         {{ range .Site.Params.one.icon }}

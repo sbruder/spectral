@@ -1,9 +1,14 @@
 {{ if .Site.Params.cta.enable }}
+{{ $md := .Params.body_is_markdown | default "false" }}
 <section id="cta" class="wrapper style4">
 	<div class="inner">
 		<header>
       <h2>{{ .Site.Params.cta.title | safeHTML }}</h2>
+      {{ if $md }}
+      {{ .Site.Params.cta.body | markdownify }}
+      {{ else }}
       <p>{{ .Site.Params.cta.body | safeHTML }}</p>
+      {{ end }}
 		</header>
 		<ul class="actions stacked">
       {{ range .Site.Params.cta.link }}

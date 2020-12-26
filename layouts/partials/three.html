@@ -1,9 +1,14 @@
 {{ if .Site.Params.three.enable }}
+{{ $md := .Params.body_is_markdown | default "false" }}
 <section id="three" class="wrapper style3 special">
 	<div class="inner">
 		<header class="major">
       <h2>{{ .Site.Params.three.title | safeHTML }}</h2>
+      {{ if $md }}
+      {{ .Site.Params.three.body_markdown | markdownify }}
+      {{ else }}
       <p>{{ .Site.Params.three.body | safeHTML }}</p>
+      {{ end }}
 		</header>
 		<ul class="features">
       {{ range .Site.Params.three.feature }}
