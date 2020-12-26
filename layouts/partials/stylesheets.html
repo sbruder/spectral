@@ -3,3 +3,8 @@
 
 {{ $noscript_css := resources.Get "css/noscript.css" | minify | fingerprint "sha512" }}
 <noscript><link rel="stylesheet" href="{{ $noscript_css.RelPermalink }}" integrity="{{ $noscript_css.Data.Integrity }}"></noscript>
+
+{{ with .Site.Params.custom_css }}
+{{ $custom_css := resources.Get . | minify | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $custom_css.RelPermalink }}" integrity="{{ $custom_css.Data.Integrity }}">
+{{ end }}
