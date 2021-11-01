@@ -21,6 +21,7 @@
     {{ partial "stylesheets.html" . }}
     {{ range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{ partial "hooks/head-end.html" . }}
     {{ end }}
 	</head>
 	<body class="landing is-preload">
