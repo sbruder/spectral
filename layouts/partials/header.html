@@ -23,6 +23,7 @@
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
     {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
     {{ partial "hooks/head-end.html" . }}
 	</head>
 	<body class="landing is-preload">
