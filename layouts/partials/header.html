@@ -21,8 +21,10 @@
     {{ partial "stylesheets.html" . }}
     {{ range .Translations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-    {{ partial "hooks/head-end.html" . }}
     {{ end }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ partial "hooks/head-end.html" . }}
 	</head>
 	<body class="landing is-preload">
 
