@@ -1,5 +1,5 @@
 {{ if .Site.Params.cta.enable }}
-{{ $md := .Params.body_is_markdown | default "false" }}
+{{ $md := .Site.Params.body_is_markdown | default false }}
 <section id="cta" class="wrapper style4">
 	<div class="inner">
 		<header>

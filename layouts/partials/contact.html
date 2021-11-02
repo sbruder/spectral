@@ -1,5 +1,5 @@
 {{ if .Site.Params.contact.enable }}
-{{ $md := .Params.body_is_markdown | default "false" }}
+{{ $md := .Site.Params.body_is_markdown | default false }}
 <section id="contact" class="wrapper style5">
   <div class="inner">
     <header class="major">

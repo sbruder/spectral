@@ -1,5 +1,5 @@
 {{ if .Site.Params.two.enable }}
-{{ $md := .Params.body_is_markdown | default "false" }}
+{{ $md := .Site.Params.body_is_markdown | default false }}
 <section id="two" class="wrapper alt style2">
   {{ range .Site.Params.two.section }}
 	<section class="spotlight">

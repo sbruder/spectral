@@ -1,5 +1,5 @@
 {{ if .Site.Params.three.enable }}
-{{ $md := .Params.body_is_markdown | default "false" }}
+{{ $md := .Site.Params.body_is_markdown | default false }}
 <section id="three" class="wrapper style3 special">
 	<div class="inner">
 		<header class="major">
