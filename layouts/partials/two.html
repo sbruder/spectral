@@ -6,7 +6,7 @@
     <div class="image"><img src="{{ .img | relURL }}" alt="" /></div><div class="content">
       <h2>{{ .title | safeHTML }}</h2>
       {{ if $md }}
-      {{ .body | markdownify }}
+      <p>{{ .body | markdownify }}</p>
       {{ else }}
       <p>{{ .body | safeHTML }}</p>
       {{ end }}

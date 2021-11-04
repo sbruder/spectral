@@ -5,7 +5,7 @@
 		<header class="major">
       <h2>{{ .Site.Params.three.title | safeHTML }}</h2>
       {{ if $md }}
-      {{ .Site.Params.three.body_markdown | markdownify }}
+      <p>{{ .Site.Params.three.body | markdownify }}</p>
       {{ else }}
       <p>{{ .Site.Params.three.body | safeHTML }}</p>
       {{ end }}

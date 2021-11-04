@@ -5,7 +5,7 @@
 		<header>
       <h2>{{ .Site.Params.cta.title | safeHTML }}</h2>
       {{ if $md }}
-      {{ .Site.Params.cta.body | markdownify }}
+      <p>{{ .Site.Params.cta.body | markdownify }}</p>
       {{ else }}
       <p>{{ .Site.Params.cta.body | safeHTML }}</p>
       {{ end }}

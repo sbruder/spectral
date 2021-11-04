@@ -5,7 +5,7 @@
     <header class="major">
       <h2>{{ .Site.Params.contact.title }}</h2>
       {{ if $md }}
-      {{ .Site.Params.contact.body | markdownify }}
+      <p>{{ .Site.Params.contact.body | markdownify }}</p>
       {{ else }}
       <p>{{ .Site.Params.contact.body | safeHTML }}</p>
       {{ end }}
