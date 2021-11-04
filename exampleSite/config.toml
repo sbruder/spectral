@@ -11,7 +11,9 @@ copyright = "John Doe"
 description = 'Another fine responsive<br />site template freebie<br />crafted by <a href="http://html5up.net">HTML5 UP</a>.<br />Ported to <a href="//gohugo.io">Hugo</a> by Simon Bruder.'
 startbuttonText = "Activate"
 startbuttonLink = "#"
+body_is_markdown = true
 #custom_css = "foo.css"
+#images = ["path_to_social_image_for_link_previews.jpg"]
 
 [[params.menu.main]]
 url = '/'
@@ -24,7 +26,10 @@ title = "Posts"
 [params.one]
 enable = true
 title = 'Arcu aliquet vel lobortis ata nisl<br />eget augue amet aliquet nisl cep donec'
-body = 'Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.'
+body = '''
+Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend  
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+'''
 
 [[params.one.icon]]
 icon = "fa-diamond"
@@ -62,7 +67,10 @@ body = 'Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. 
 [params.three]
 enable = true
 title = 'Accumsan mus tortor nunc aliquet'
-body = 'Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.'
+body = '''
+Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend  
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+'''
 
 [[params.three.feature]]
 icon = "fa-paper-plane-o"
