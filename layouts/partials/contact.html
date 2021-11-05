@@ -1,19 +1,17 @@
-{{ if .Site.Params.contact.enable }}
 {{ $md := .Site.Params.body_is_markdown | default false }}
+
+{{ with .Site.Params.contact }}
+{{ if .enable }}
 <section id="contact" class="wrapper style5">
   <div class="inner">
     <header class="major">
-      <h2>{{ .Site.Params.contact.title }}</h2>
-      {{ if $md }}
-      {{ .Site.Params.contact.body | markdownify }}
-      {{ else }}
-      <p>{{ .Site.Params.contact.body | safeHTML }}</p>
-      {{ end }}
+      <h2>{{ .title }}</h2>
+      {{ partial "body_text.html" (dict "context" . "md" $md) }}
     </header>
     <form method="post" action="https://formspree.io/{{ .Site.Params.contact.email }}">
       <div class="row gtr-uniform">
         <input type="hidden" name="_subject" value="{{ .Site.Params.contact.subject }}" />
-        {{ if .Site.Params.contact.plain }}
+        {{ if .plain }}
         <input type="hidden" name="_format" value="plain" />
         {{ end }}
         <div class="col-6 col-12-xsmall">
@@ -35,4 +33,5 @@
     </form>
   </div>
 </section>
+{{ end }}
 {{ end }}

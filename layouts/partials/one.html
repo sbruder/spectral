@@ -1,20 +1,20 @@
-{{ if .Site.Params.one.enable }}
 {{ $md := .Site.Params.body_is_markdown | default false }}
+
+{{ with .Site.Params.one }}
+{{ if .enable }}
 	<section id="one" class="wrapper style1 special">
 		<div class="inner">
 			<header class="major">
-        <h2>{{ .Site.Params.one.title | safeHTML}}</h2>
-        {{ if $md }}
-        {{ .Site.Params.one.body | markdownify }}
-        {{ else }}
-        <p>{{ .Site.Params.one.body | safeHTML }}</p>
-        {{ end }}
+        <h2>{{ .title | safeHTML}}</h2>
+
+        {{ partial "body_text.html" (dict "context" . "md" $md) }}
 			</header>
 			<ul class="icons major">
-        {{ range .Site.Params.one.icon }}
+        {{ range .icon }}
         <li><span class="icon {{ .icon }} major style{{ .style }}"><span class="label">{{ .label }}</span></span></li>
         {{ end }}
 			</ul>
 		</div>
 	</section>
+{{ end }}
 {{ end }}

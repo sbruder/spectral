@@ -1,11 +1,14 @@
 name = "Spectral"
 license = "CC-BY 3.0"
-licenselink = "https://html5up.net/license"
+licenselink = "https://github.com/sbruder/spectral/blob/master/LICENSE.md"
 description = "Port of the HTML5UP Spectral Theme (https://html5up.net/spectral)"
-homepage = "//"
+homepage = "https://github.com/sbruder/spectral"
 tags = ["company", "portfolio", "blog"]
 features = ["blog", "responsive", "multilingual"]
-min_version = 0.19
 
 [author]
   name = "Simon Bruder"
+
+[original]
+  name = "HTML5UP Spectral"
+  homepage = "https://html5up.net/spectral"
