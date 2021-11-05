@@ -1,20 +1,19 @@
-{{ if .Site.Params.cta.enable }}
 {{ $md := .Site.Params.body_is_markdown | default false }}
+
+{{ with .Site.Params.cta }}
+{{ if .enable }}
 <section id="cta" class="wrapper style4">
 	<div class="inner">
 		<header>
-      <h2>{{ .Site.Params.cta.title | safeHTML }}</h2>
-      {{ if $md }}
-      <p>{{ .Site.Params.cta.body | markdownify }}</p>
-      {{ else }}
-      <p>{{ .Site.Params.cta.body | safeHTML }}</p>
-      {{ end }}
+      <h2>{{ .title | safeHTML }}</h2>
+      {{ partial "body_text.html" (dict "context" . "md" $md) }}
 		</header>
 		<ul class="actions stacked">
-      {{ range .Site.Params.cta.link }}
+      {{ range .link }}
       <li><a href="{{ .href }}" class="button fit {{ if .special }}primary{{ end }}">{{ .text }}</a></li>
       {{ end }}
 		</ul>
 	</div>
 </section>
+{{ end }}
 {{ end }}

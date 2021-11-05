@@ -1,17 +1,16 @@
-{{ if .Site.Params.two.enable }}
 {{ $md := .Site.Params.body_is_markdown | default false }}
+
+{{ with .Site.Params.two }}
+{{ if .enable }}
 <section id="two" class="wrapper alt style2">
-  {{ range .Site.Params.two.section }}
+  {{ range .section }}
 	<section class="spotlight">
     <div class="image"><img src="{{ .img | relURL }}" alt="" /></div><div class="content">
       <h2>{{ .title | safeHTML }}</h2>
-      {{ if $md }}
-      <p>{{ .body | markdownify }}</p>
-      {{ else }}
-      <p>{{ .body | safeHTML }}</p>
-      {{ end }}
+      {{ partial "body_text.html" (dict "context" . "md" $md) }}
 		</div>
 	</section>
   {{ end }}
 </section>
+{{ end }}
 {{ end }}

@@ -1,0 +1,10 @@
+{{ if .md }}
+  {{ $md_body := .context.body | markdownify }}
+  {{ if not (in $md_body "<p>") }}
+    {{ printf "<p>%s</p>" $md_body | safeHTML }}
+  {{ else }}
+    {{ $md_body }}
+  {{ end }}
+{{ else }}
+<p>{{ .context.body | safeHTML }}</p>
+{{ end }}
