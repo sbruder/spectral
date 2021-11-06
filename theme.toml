@@ -6,6 +6,8 @@ homepage = "https://github.com/sbruder/spectral"
 tags = ["company", "portfolio", "blog"]
 features = ["blog", "responsive", "multilingual"]
 
+demosite = "https://sbruder.github.io/spectral/"
+
 [author]
   name = "Simon Bruder"
 
