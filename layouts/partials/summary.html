@@ -1,7 +1,8 @@
 <section class="wrapper style5">
 	<div class="inner">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a><time class="icon fa-clock-o">{{ .Date.Format "02.01.2006 15:04" }}</time></h2>
-    {{ .Summary }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <time class="icon fa-clock-o">{{ .Date.Format "02.01.2006 15:04" }}</time>
+    <p>{{ .Summary }}</p>
     {{ if .Truncated }}
     <a href="{{ .Permalink }}">{{ i18n "readmore" }}</a>
     {{ end }}
