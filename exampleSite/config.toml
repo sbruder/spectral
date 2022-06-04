@@ -19,9 +19,14 @@ body_is_markdown = true
 url = '/'
 title = "Home"
 
-#[[params.menu.main]]
-#url = '/posts/'
-#title = "Posts"
+[[params.menu.main]]
+url = '/posts/'
+title = "Posts"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
 
 [params.one]
 enable = true
