@@ -14,6 +14,18 @@
                 href="https://sbruder.github.io/spectral/de/categories/"
                 />
   </url><url>
+    <loc>https://sbruder.github.io/spectral/de/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://sbruder.github.io/spectral/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://sbruder.github.io/spectral/de/series/"
+                />
+  </url><url>
     <loc>https://sbruder.github.io/spectral/de/</loc>
     <xhtml:link
                 rel="alternate"
