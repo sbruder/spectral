@@ -130,7 +130,7 @@ phone = "+49 (0) 030 000 000"
 address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
 email = "nospam@example.com"
 subject = "New Submission!"
-plain = false
+formspree_form_id = "example_invalid"
 
 [params.social]
 twitter = ""
