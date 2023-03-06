@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://sbruder.github.io/spectral/de/sitemap.xml</loc>
+    <loc>https://sbruder.github.io/spectral/en/sitemap.xml</loc>
+    
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://sbruder.github.io/spectral/en/sitemap.xml</loc>
-    
-      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://sbruder.github.io/spectral/de/sitemap.xml</loc>
     
   </sitemap>
   
