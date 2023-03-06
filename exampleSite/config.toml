@@ -20,7 +20,7 @@ url = '/'
 title = "Home"
 
 [[params.menu.main]]
-url = '/posts/'
+url = './posts/'
 title = "Posts"
 
 [taxonomies]
