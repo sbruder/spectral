@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>index on Spectral</title><link>https://sbruder.github.io/spectral/tags/index/</link><description>Recent content in index on Spectral</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://sbruder.github.io/spectral/tags/index/index.xml" rel="self" type="application/rss+xml"/><item><title>Posts</title><link>https://sbruder.github.io/spectral/posts/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://sbruder.github.io/spectral/posts/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Spectral</title>
+    <link>https://sbruder.github.io/spectral/tags/index/</link>
+    <description>Recent content in index on Spectral</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://sbruder.github.io/spectral/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>https://sbruder.github.io/spectral/posts/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sbruder.github.io/spectral/posts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
