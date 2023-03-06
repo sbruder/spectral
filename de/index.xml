@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Spectral</title>
-    <link>https://sbruder.github.io/spectral/de/</link>
-    <description>Recent content on Spectral</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://sbruder.github.io/spectral/de/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spectral</title><link>spectral/de/</link><description>Recent content on Spectral</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="spectral/de/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
