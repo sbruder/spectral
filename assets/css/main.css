@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(fontawesome-all.min.css);
 
 /* https://google-webfonts-helper.herokuapp.com/fonts/open-sans */
 /* open-sans-regular - latin */
@@ -1981,10 +1981,14 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				display: inline-block;
 				font-style: normal;
-				font-weight: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
 				text-transform: none !important;
+				font-family: 'Font Awesome 6 Free';
+				font-weight: 900;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -1993,13 +1997,14 @@ input, select, textarea {
 				border-radius: 3px;
 				content: '';
 				display: inline-block;
-				height: 1.65em;
+				font-size: 0.8em;
+				height: 2.0625em;
 				left: 0;
-				line-height: 1.58125em;
+				line-height: 2.0625em;
 				position: absolute;
 				text-align: center;
 				top: 0;
-				width: 1.65em;
+				width: 2.0625em;
 			}
 
 		input[type="checkbox"]:checked + label:before,
@@ -2074,14 +2079,30 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			display: inline-block;
 			font-style: normal;
-			font-weight: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
 			text-transform: none !important;
+			font-family: 'Font Awesome 6 Free';
+			font-weight: 400;
 		}
 
 		.icon > .label {
 			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 6 Brands';
 		}
 
 		.icon.major {

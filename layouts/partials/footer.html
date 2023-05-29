@@ -2,22 +2,31 @@
 					<footer id="footer">
 						<ul class="icons">
               {{ with .Site.Params.social.twitter }}
-              <li><a href="https://twitter.com/{{ . }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="https://twitter.com/{{ . }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.mastodon }}
+              <li><a href="https://mastodon.social/{{ . }}" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.github }}
+              <li><a href="https://github.com/{{ . }}" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
               {{ end }}
               {{ with .Site.Params.social.facebook }}
-              <li><a href="https://facebook.com/{{ . }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="https://facebook.com/{{ . }}" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
+              {{ end }}
+              {{ with .Site.Params.social.youtube }}
+              <li><a href="https://youtube.com/{{ . }}" class="icon brands fa-youtube"><span class="label">GitHub</span></a></li>
               {{ end }}
               {{ with .Site.Params.social.instagram }}
-              <li><a href="https://instagram.com/{{ . }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="https://instagram.com/{{ . }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
               {{ end }}
               {{ with .Site.Params.social.dribble }}
-              <li><a href="https://dribble.com/{{ . }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+              <li><a href="https://dribble.com/{{ . }}" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
               {{ end }}
               {{ with .Site.Params.contact.email }}
-              <li><a href="mailto:{{ . }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+              <li><a href="mailto:{{ . }}" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
               {{ end }}
               {{ with .Site.Params.contact.phone }}
-              <li><a href="tel:{{ . }}" class="icon fa-phone"><span class="label">Phone</span></a></li>
+              <li><a href="tel:{{ . }}" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
               {{ end }}
 
 						</ul>

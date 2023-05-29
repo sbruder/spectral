@@ -37,17 +37,17 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
 '''
 
 [[params.one.icon]]
-icon = "fa-diamond"
+icon = "fa-gem"
 style = "1"
 label = "Lorem"
 
 [[params.one.icon]]
-icon = "fa-heart-o"
+icon = "fa-heart"
 style = "2"
 label = "Ipsum"
 
 [[params.one.icon]]
-icon = "fa-code"
+icon = "solid fa-code"
 style = "3"
 label = "Dolor"
 
@@ -78,32 +78,32 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
 '''
 
 [[params.three.feature]]
-icon = "fa-paper-plane-o"
+icon = "fa-paper-plane"
 title = "Arcu accumsan"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
 [[params.three.feature]]
-icon = "fa-laptop"
+icon = "solid fa-laptop"
 title = "Ac Augue Eget"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
 [[params.three.feature]]
-icon = "fa-code"
+icon = "solid fa-code"
 title = "Foo bar"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
 [[params.three.feature]]
-icon = "fa-headphones"
+icon = "solid fa-headphones-alt"
 title = "Baz kram"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
 [[params.three.feature]]
-icon = "fa-heart-o"
+icon = "fa-heart"
 title = "Some latin text"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
 [[params.three.feature]]
-icon = "fa-flag-o"
+icon = "fa-flag"
 title = "Nothing important"
 body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
 
@@ -134,7 +134,10 @@ formspree_form_id = "example_invalid"
 
 [params.social]
 twitter = ""
+mastodon = ""
+github = ""
 facebook = ""
+youtube = ""
 instagram = ""
 dribble = ""
 
