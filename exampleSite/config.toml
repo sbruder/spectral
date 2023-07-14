@@ -150,3 +150,7 @@ languageName = "English"
 [languages.de]
 weight = 10
 languageName = "Deutsch"
+
+[languages.es]
+weight = 10
+languageName = "Español"
