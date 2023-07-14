@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sbruder.github.io/spectral/de/categories/</loc>
+    <loc>https://sbruder.github.io/spectral/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://sbruder.github.io/spectral/es/categories/"
+                hreflang="de"
+                href="https://sbruder.github.io/spectral/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -15,15 +15,15 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://sbruder.github.io/spectral/de/categories/"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/categories/"
                 />
   </url><url>
-    <loc>https://sbruder.github.io/spectral/de/series/</loc>
+    <loc>https://sbruder.github.io/spectral/es/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://sbruder.github.io/spectral/es/series/"
+                hreflang="de"
+                href="https://sbruder.github.io/spectral/de/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -32,15 +32,15 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://sbruder.github.io/spectral/de/series/"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/series/"
                 />
   </url><url>
-    <loc>https://sbruder.github.io/spectral/de/</loc>
+    <loc>https://sbruder.github.io/spectral/es/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://sbruder.github.io/spectral/es/"
+                hreflang="de"
+                href="https://sbruder.github.io/spectral/de/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -49,15 +49,15 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://sbruder.github.io/spectral/de/"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/"
                 />
   </url><url>
-    <loc>https://sbruder.github.io/spectral/de/tags/</loc>
+    <loc>https://sbruder.github.io/spectral/es/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://sbruder.github.io/spectral/es/tags/"
+                hreflang="de"
+                href="https://sbruder.github.io/spectral/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -66,8 +66,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://sbruder.github.io/spectral/de/tags/"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/tags/"
                 />
   </url>
 </urlset>

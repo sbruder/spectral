@@ -11,6 +11,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://sbruder.github.io/spectral/categories/"
                 />
@@ -39,6 +44,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/series/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://sbruder.github.io/spectral/series/"
                 />
@@ -49,6 +59,11 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://sbruder.github.io/spectral/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -65,6 +80,11 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://sbruder.github.io/spectral/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://sbruder.github.io/spectral/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
