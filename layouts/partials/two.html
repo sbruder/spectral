@@ -5,7 +5,10 @@
 <section id="two" class="wrapper alt style2">
   {{ range .section }}
 	<section class="spotlight">
-    <div class="image"><img src="{{ .img | relURL }}" alt="" /></div><div class="content">
+    <div class="image">
+      <img src="{{ .img | relURL }}" {{ with .img_alt }}alt="{{ . }}"{{ end }} />
+    </div>
+    <div class="content">
       <h2>{{ .title | safeHTML }}</h2>
       {{ partial "body_text.html" (dict "context" . "md" $md) }}
 		</div>
