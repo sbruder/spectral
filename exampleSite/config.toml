@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/spectral/"
 title = "Spectral"
 languageCode = "en-us"
 defaultContentLanguage = "en"
