@@ -8,3 +8,8 @@
 {{ $custom_css := resources.Get . | minify | fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}" integrity="{{ $custom_css.Data.Integrity }}">
 {{ end }}
+
+{{ with .Site.Params.custom_sass }}
+{{ $custom_sass := resources.Get . | resources.ToCSS | minify | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $custom_sass.RelPermalink }}" integrity="{{ $custom_sass.Data.Integrity }}">
+{{ end }}

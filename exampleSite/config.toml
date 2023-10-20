@@ -4,6 +4,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 paginate = "7"
 theme = "spectral"
+#googleAnalytics = "G-XXXXXXXXXX"
 
 [params]
 fancyTitle = "Spectral" # title for frontpage, may include image
@@ -13,6 +14,7 @@ startbuttonText = "Activate"
 startbuttonLink = "#"
 body_is_markdown = true
 #custom_css = "foo.css"
+#custom_sass = "bar.scss"
 #images = ["path_to_social_image_for_link_previews.jpg"]
 
 [[params.menu.main]]

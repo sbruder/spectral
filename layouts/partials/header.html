@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="referrer" content="origin">
 
+	{{ template "_internal/google_analytics.html" . }}
+
     {{ with .Site.Params.description }}<meta name="description" content="{{ . | plainify }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     {{ range .AlternativeOutputFormats -}}
