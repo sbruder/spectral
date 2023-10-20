@@ -16,11 +16,11 @@ body_is_markdown = true
 #images = ["path_to_social_image_for_link_previews.jpg"]
 
 [[params.menu.main]]
-url = '/'
+url = ''
 title = "Home"
 
 [[params.menu.main]]
-url = '/posts/'
+url = 'posts/'
 title = "Posts"
 
 [taxonomies]
