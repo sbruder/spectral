@@ -36,18 +36,20 @@
 				<!-- Header -->
           <header id="header"{{ if .Page.IsHome }} class="alt"{{ end }}>
             <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-						<nav id="nav">
+			{{- with site.Menus.main}}
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle" aria-label='{{ i18n "menu" }}'><span>{{ i18n "menu" }}</span></a>
+						<div id="menu">
 							<ul>
-								<li class="special">
-                  <a href="#menu" class="menuToggle" aria-label='{{ i18n "menu" }}'><span>{{ i18n "menu" }}</span></a>
-									<div id="menu">
-										<ul>
-				              {{ range .Site.Params.menu.main }}
-				              <li><a href="{{ .url | relURL }}">{{ .title }}</a></li>
-				              {{ end }}
-										</ul>
-									</div>
-								</li>
+							{{ range site.Menus.main }}
+								<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+							{{ end }}
 							</ul>
-						</nav>
-					</header>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			{{- end}}
+			</header>
