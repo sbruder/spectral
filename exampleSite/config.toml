@@ -17,13 +17,13 @@ body_is_markdown = true
 #custom_sass = "bar.scss"
 #images = ["path_to_social_image_for_link_previews.jpg"]
 
-[[params.menu.main]]
-url = '/'
-title = "Home"
+[[menus.main]]
+pageRef = '/'
+name = "Home"
 
-[[params.menu.main]]
-url = '/posts/'
-title = "Posts"
+[[menus.main]]
+pageRef = '/posts/'
+name = "Posts"
 
 [taxonomies]
     tag = "tags"
